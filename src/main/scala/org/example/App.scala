@@ -7,9 +7,9 @@ object App {
   def main(args: Array[String]) {
     Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
 
-    val inputFile = "src/main/resources/README.md"
+    val inputFile = args(1)
 
-    val conf = new SparkConf().setAppName("WordCount").setMaster("local")
+    val conf = new SparkConf().setAppName("WordCount").setMaster(args(0))
     val sc = new SparkContext(conf)
     val textFile = sc.textFile(inputFile)
 
