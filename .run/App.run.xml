@@ -2,7 +2,7 @@
   <configuration default="false" name="App" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="org.example.App" />
     <module name="saprk.maven" />
-    <option name="PROGRAM_PARAMETERS" value="local src/main/resources/README.md" />
+    <option name="PROGRAM_PARAMETERS" value="local[*] src/main/resources/input.txt" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="org.example.*" />
